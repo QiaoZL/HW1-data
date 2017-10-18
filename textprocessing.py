@@ -84,9 +84,11 @@ for key in sortedfulldict:
     if key[1] == 1:
         oncewords.append(key[0])
 
-print("Q1-Q3")
+print("Q1")
 print(databasesize)
+print("Q2")
 print(len(sortedfulldict))
+print("Q3")
 print(oncewords)
 
 #print(mostfrewords)
