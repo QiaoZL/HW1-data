@@ -1,6 +1,7 @@
 
 import os
 import string
+from math import log
 
 
 
@@ -101,13 +102,17 @@ for query in mostfrewords:
     for doc in indexedDoc:        
         if query in doc.worddict.keys():
             idfdict[query] += 1
-    idfdict[query] /= len(indexedDoc)
+    idfdict[query] = log(len(indexedDoc)/idfdict[query])
     tfidfdict[query] = tfdict[query]*idfdict[query]
 
 print("Q4")
+print("TF")
 print(tfdict)
+print("IDF")
 print(idfdict)
+print("TF-IDF")
 print(tfidfdict)
+print("Possibility")
 print(possibilitydict) 
 
 print("Q5")
