@@ -39,7 +39,7 @@ for filename in docnames :
     doclist.append(textstr)    
     docfile.close()
 
-print(doclist[15])
+#print(doclist[15])
 indexedDoc = []
 sortedfulldict = []
 databasesize = 0
@@ -88,7 +88,7 @@ print(databasesize)
 print(len(sortedfulldict))
 print(oncewords)
 
-print(mostfrewords)
+#print(mostfrewords)
 tfdict = {}
 idfdict = {}
 tfidfdict = {}
